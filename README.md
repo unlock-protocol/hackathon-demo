@@ -5,13 +5,13 @@ We present how to easily add token-gating using the [Unlock Protocol](https://un
 
 Below is a detail list of changes you can add to the application to add token gating. You can also check [this pull-request for a detailed diff](https://github.com/unlock-protocol/hackathon-demo/pull/1).
 
-## Install deps:
+## 1. Install deps:
 
 ```bash
 yarn add wagmi ethers @unlock-protocol/paywall @unlock-protocol/networks @unlock-protocol/contracts
 ```
 
-## Update App.js to include wagmi config
+## 2. Update App.js to include wagmi config
 
 This is not Unlock specific:
 
@@ -42,7 +42,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 
 ```
 
-## Add a `TokenGate` component:
+## 3. Add a `TokenGate` component:
 
 This component is in fact pretty simple:
 
@@ -148,7 +148,7 @@ const Checkout = () => {
 
 ```
 
-## Wrap the components that renders the content
+## 4. Wrap the components that renders the content
 
 We just replace `post-body.tsx` with this:
 
@@ -178,6 +178,6 @@ export default PostBody
 
 ```
 
-## That's it!
+## 5. That's it!
 
 Please jump in [Unlock's Discord](https://discord.unlock-protocol.com/) if you have any question!
