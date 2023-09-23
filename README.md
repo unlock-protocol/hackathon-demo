@@ -1,17 +1,11 @@
-# Unlock Hackathon demo!
 
-This repo is a demo of a simple React-based blogging application.
-We present how to easily add token-gating using the [Unlock Protocol](https://unlock-protocol.com/).
-
-Below is a detail list of changes you can add to the application to add token gating. You can also check [this pull-request for a detailed diff](https://github.com/unlock-protocol/hackathon-demo/pull/1).
-
-## 1. Install deps:
+# Install deps:
 
 ```bash
-yarn add wagmi ethers @unlock-protocol/paywall @unlock-protocol/networks @unlock-protocol/contracts
+yarn add wagmi@0.12.0 ethers@5 @unlock-protocol/paywall @unlock-protocol/networks @unlock-protocol/contracts
 ```
 
-## 2. Update App.js to include wagmi config
+# Update App.js to include wagmi config
 
 This is not Unlock specific:
 
@@ -42,7 +36,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 
 ```
 
-## 3. Add a `TokenGate` component:
+# Add a `TokenGate` component:
 
 This component is in fact pretty simple:
 
@@ -148,7 +142,7 @@ const Checkout = () => {
 
 ```
 
-## 4. Wrap the components that renders the content
+# Wrap the components that renders the content
 
 We just replace `post-body.tsx` with this:
 
@@ -178,6 +172,6 @@ export default PostBody
 
 ```
 
-## 5. That's it!
+# That's it!
 
 Please jump in [Unlock's Discord](https://discord.unlock-protocol.com/) if you have any question!
