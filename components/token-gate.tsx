@@ -32,7 +32,7 @@ const Checkout = () => {
   const checkout = () => {
     console.log(connector)
     const paywall = new Paywall(networks)
-    const provider = connector!.provider
+    const provider = connector.getProvider()
     console.log(paywall)
     paywall.connect(provider)
     paywall.loadCheckoutModal({
