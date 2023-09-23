@@ -2,7 +2,7 @@
 # Install deps:
 
 ```bash
-yarn add wagmi ethers@5 @unlock-protocol/paywall @unlock-protocol/networks @unlock-protocol/contracts
+yarn add wagmi@0.12.0 ethers@5 @unlock-protocol/paywall @unlock-protocol/networks @unlock-protocol/contracts
 ```
 
 # Update App.js to include wagmi config
